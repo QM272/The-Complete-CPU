@@ -1,0 +1,17 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY RED IS
+PORT(
+	 RED_in   : in STD_LOGIC_VECTOR(31 DOWNTO 0);
+	 RED_out  : out unsigned(7 DOWNTO 0)
+	 );
+END ENTITY;
+
+ARCHITECTURE Behavior OF RED IS
+BEGIN
+	RED_out <= unsigned (RED_in(7 DOWNTO 0));
+END Behavior;
+
+
